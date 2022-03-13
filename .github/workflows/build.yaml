@@ -58,8 +58,8 @@ jobs:
         uses: docker/login-action@v1 
         with:
           registry: idokrn.jfrog.io
-          username: $JFROG_USER
-          password: $JFROG_TOKEN
+          username: ${{ secrets.JFROG_USER }}
+          password: ${{ secrets.JFROG_TOKEN }}
       
       - name: Build and push image
         uses: docker/build-push-action@v2.9.0
