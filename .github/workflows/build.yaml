@@ -36,6 +36,7 @@ jobs:
         run: pytest
 
   build:
+    environment: Main
     needs: test
     runs-on: ubuntu-latest
     
