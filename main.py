@@ -26,6 +26,7 @@ def get_item(obj_id: str):
     return res
 
 
+# test
 @app.delete("/item")
 def delete_item(obj_id: str):
     res = db.delete_item(obj_id)
